@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLFSR", "NLFSR\NLFSR.csproj", "{A3340EB4-8054-4B38-8F2D-F02FDDF0BD84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3340EB4-8054-4B38-8F2D-F02FDDF0BD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3340EB4-8054-4B38-8F2D-F02FDDF0BD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3340EB4-8054-4B38-8F2D-F02FDDF0BD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3340EB4-8054-4B38-8F2D-F02FDDF0BD84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C282649-A173-4099-B850-3A8BE73A8FAB}
+	EndGlobalSection
+EndGlobal

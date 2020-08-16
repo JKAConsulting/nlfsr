@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NLFSR
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Program prg = new Program();
+            prg.Calculate();
+        }
+
+        private void Calculate()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            string initialRegister = "1100";
+            string newRegister;
+            int level = 10;
+            sb.Append("Starting Register: " + initialRegister);           
+            sb.AppendLine();
+
+            for (int j = 0; j <= level; j++)
+            {
+                int[] outarry = Array.ConvertAll(initialRegister.ToString().ToArray(), x => (int)x - 48);
+
+                int bitZero = outarry[0];
+                int bitOne = outarry[1];
+                int bitTwo = outarry[2];
+                int bitThree = outarry[3];
+
+                int newBit = (bitZero & bitTwo) | bitThree;
+
+                sb.Append("ki=" + bitThree.ToString() + "\t" + "New bit calc:" + newBit.ToString() + "\t" + "New r=" + initialRegister.ToString());
+
+                newRegister = newBit.ToString() + bitZero.ToString() + bitOne.ToString() + bitTwo.ToString();
+                initialRegister = (newRegister);
+                
+                sb.AppendLine();
+            }
+
+            Console.WriteLine(sb.ToString());
+
+
+        }
+    }
+}
